@@ -8,6 +8,9 @@ export const getLocation = async (address: string): Promise< {lat: number, lon:n
         q:address,
         format: 'json',
         limit: 1
+    },
+    headers: {
+      'User-Agent': 'geolocation-service/1.0 (caiohf.cf@gmail.com)',
     }
   })
   .catch((error: unknown) => {
