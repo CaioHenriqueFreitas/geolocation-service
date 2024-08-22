@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import { processDistanceCalculation } from '../services/processDistanceCalculation';
-import axios from 'axios';
 import logger from '../utils/logger';
 
 const getDistance = async (req: Request, res: Response): Promise<void> => {
