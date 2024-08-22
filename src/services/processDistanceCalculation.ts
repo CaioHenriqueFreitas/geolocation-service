@@ -1,4 +1,4 @@
-import { getLocation } from './nominatingInterface';
+import { getLocation } from './geolocationProvider';
 import { calculateDistance } from '../utils/distanceCalculator';
 
 const processDistanceCalculation = async (origin: string, destination: string): Promise<number> => {
